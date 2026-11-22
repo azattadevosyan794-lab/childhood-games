@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игры детства</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<header class="header">
+    <div class="header__container">
+        <nav class="header__nav" aria-label="Основное меню">
+            <ul class="header__list">
+                <li><button class="header__button" type="button" data-section="about">Главное</button></li>
+                <li><button class="header__button" type="button" data-section="calculator">Калькулятор</button></li>
+                <li><button class="header__button" type="button" data-section="tic-tac-toe">Крестики-нолики</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="about">
+        <p>Этот сайт я написал как доказательство того, что умею писать код. Хотя в нынешних реалиях так может каждый с Клодом, но всё же надеюсь, что меня позовут на собеседование.</p>
+    </section>
+
+    <section class="calculator">
+        <h2 class="calculator__title">Калькулятор</h2>
+        <div class="calculator__border">
+            <div class="calculator__display" id="display">0</div>
+        <div class="calculator__buttons">
+            <button class="calculator__button" type="button" data-value="7">7</button>
+            <button class="calculator__button" type="button" data-value="8">8</button>
+            <button class="calculator__button" type="button" data-value="9">9</button>
+            <button class="calculator__button" type="button" data-value="/">/</button>
+            <button class="calculator__button" type="button" data-value="4">4</button>
+            <button class="calculator__button" type="button" data-value="5">5</button>
+            <button class="calculator__button" type="button" data-value="6">6</button>
+            <button class="calculator__button" type="button" data-value="*">*</button>
+            <button class="calculator__button" type="button" data-value="1">1</button>
+            <button class="calculator__button" type="button" data-value="2">2</button>
+            <button class="calculator__button" type="button" data-value="3">3</button>
+            <button class="calculator__button" type="button" data-value="-">-</button>
+            <button class="calculator__button" type="button" data-value="0">0</button>
+            <button class="calculator__button" type="button" data-value=".">.</button>
+            <button class="calculator__button" type="button" id="clear">C</button>
+            <button class="calculator__button" type="button" data-value="+">+</button>
+            <button class="calculator__button calculator__button--equal" type="button" id="equal-button">=</button>
+        </div>
+ 
+        </div>
+        
+    </section>
+    <section class="tic-tac-toe">
+        <h2 class="tic-tac-toe__title">Крестики-нолики</h2>
+        <div class="tic-tac-toe__board">
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="0"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="1"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index ="2"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="3"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="4"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="5"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="6"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="7"></button>
+            <button class="tic-tac-toe__cell"type="button" data-cell-index="8"></button>
+        </div>
+    </section>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
